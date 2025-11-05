@@ -35,7 +35,7 @@ Sebelum menjalankan program:
 
 ## Membuat Database & Tabel
 _* Di dalam file database.py, semua perintah SQL untuk membuat database dan tabel sudah disiapkan, tapi dalam keadaan dikomentari agar bisa dijalankan satu per satu secara manual.
-Tujuannya supaya kamu bisa mengontrol tiap tahap pembuatan (dan tahu kalau ada error di bagian tertentu)._
+Tujuannya supaya bisa mengontrol tiap tahap pembuatan, dan tahu kalau ada error di bagian tertentu._
 
 1. Buat Database
 - Buka database.py
@@ -73,4 +73,4 @@ Tujuannya supaya kamu bisa mengontrol tiap tahap pembuatan (dan tahu kalau ada e
 - Setelah tabel berhasil dibuat, biarkan semua dalam kondisi dikomentari agar tidak duplikat saat file di-run ulang.
 - Kalau ada error seperti "database doesn't exist", pastikan database-nya sudah dibuat di langkah pertama.
 
-#Selamat bekerja guyss
+# Selamat bekerja guyss
