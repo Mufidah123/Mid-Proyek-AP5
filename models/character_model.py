@@ -13,6 +13,8 @@ class Character:
         self.title = "Novice"
         self.score = 0
         self.inventory = {}
+        self.quest_selesai = 0     # jumlah quest biasa yang diselesaikan
+        self.bisa_lawan_boss = False # status bisa melawan boss atau tidak
 
     def show_status(self):
         print(f"=== STATUS KARAKTER ===")
