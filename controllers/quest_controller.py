@@ -34,25 +34,6 @@ class QuestController:
         print("\nQuest Baru Diterima!")
         quest.tampilkan_info_quest()
 
-    def selesaikan_quest(self):
-        if not self.active_quest:
-            print("❌ Tidak ada quest aktif!\n")
-            return
-
-        print(f"Menjalankan quest: {self.active_quest.nama}...")
-        hasil = random.choices(["berhasil", "gagal"], weights=[0.8, 0.2])[0]
-
-        if hasil == "berhasil":
-            self.character.gold += self.active_quest.reward_gold
-            self.character.exp += self.active_quest.reward_exp
-            print(f"✅ Quest selesai! Kamu mendapat {self.active_quest.reward_gold} gold dan {self.active_quest.reward_exp} exp.")
-            self.level_up()
-        else:
-            print("❌ Quest gagal! Tidak mendapat hadiah.")
-
-        self.active_quest = None
-        print(f"💰 Gold: {self.character.gold} | ⭐ EXP: {self.character.exp}\n")
-
     def buat_quest_boss(self):
         bos = random.choice(["Naga Api", "Raja Orc", "Iblis Kegelapan", "Hydra"])
         print("\n🔥 QUEST BOSS TERBUKA! 🔥")
